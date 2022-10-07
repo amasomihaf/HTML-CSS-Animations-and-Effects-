@@ -1,0 +1,65 @@
+body{
+    background-image: url(/images/pexels-photo-4004374.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.progress{
+    margin: 50% auto;
+    margin-top: auto;
+}
+
+.progress img{
+    width: 80px;
+    margin: 50% auto;
+    margin-bottom: 20px;
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+
+}
+ul li .fa{
+    background: #ccc;
+    width: 24px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+ul li .fa::after{
+    content: "";
+    background: #ccc;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 216px;
+    z-index: -1;
+}
+ul li:nth-child(3) .fa{
+    background: yellow;
+}
+ul li:nth-child(3) .fa::after{
+    background: yellow;
+}
+ul li:nth-child(1) .fa,ul li:nth-child(2) .fa
+{
+    background: blue;
+}
+ul li:nth-child(1) .fa::after,ul li:nth-child(2) .fa::after{
+    background: blue;
+}
+ul li:first-child .fa::after{
+    width: 105px;
+    left: 100px;
+}
+ul li:last-child .fa::after{
+    width: 105px;
+}
